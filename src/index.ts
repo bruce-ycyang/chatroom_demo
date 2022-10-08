@@ -11,7 +11,7 @@ const app = express();
 const server = https.createServer(app);
 const io = new Server(server);
 
-//監測連接ㄋ
+//監測連接
 io.on("connection", (socket) => {
   socket.emit("join", "welcome");
 
